@@ -32,7 +32,7 @@ def join_meeting(meeting_url, wait_time=5):  # Default wait time is 180 seconds 
     close_edge()
  
 def get_meeting_url_from_server():
-    server_ip = '10.74.140.49'
+    server_ip = 'server_ip'
     response = requests.get(f'http://{server_ip}:5000/get_meeting_url', timeout=10)
     response.raise_for_status()
     data = response.json()
